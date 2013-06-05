@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "LoginModel.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 
@@ -20,10 +22,28 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    LoginModel* lm = [LoginModel sharedInstance];
+    if (!lm.isAuthenticated) {
+        LoginViewController* lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"loginViewController"];
+        [lvc viewDidLoad];
+        [self presentViewController:lvc animated:true completion:^{
+
+        }];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark Action Handlers
+- (IBAction)onLeftMenuButtonClick:(id)sender
+{
+    [self.sidePanelController showLeftPanelAnimated:true];
 }
 
 @end
