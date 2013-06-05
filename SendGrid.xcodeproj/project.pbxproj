@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5D6EA5175EF789008B24CC /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D6EA4175EF789008B24CC /* ProfileController.m */; };
+		3C5D6EA8175EFD9C008B24CC /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D6EA7175EFD9C008B24CC /* Helper.m */; };
 		9DB1555A175E86790078D890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB15559175E86790078D890 /* UIKit.framework */; };
 		9DB1555C175E86790078D890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB1555B175E86790078D890 /* Foundation.framework */; };
 		9DB1555E175E86790078D890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB1555D175E86790078D890 /* CoreGraphics.framework */; };
@@ -369,6 +371,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C5D6EA3175EF788008B24CC /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
+		3C5D6EA4175EF789008B24CC /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
+		3C5D6EA6175EFD9C008B24CC /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		3C5D6EA7175EFD9C008B24CC /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		6E1F4D0F7F724431B4FFC723 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		7089C61E431F47A8964CB253 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB15556175E86790078D890 /* SendGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -800,6 +806,8 @@
 				9DF4235A175E90FE007965D1 /* SideViewController.m */,
 				9DF42610175EB3C0007965D1 /* LeftMenuViewController.h */,
 				9DF42611175EB3C1007965D1 /* LeftMenuViewController.m */,
+				3C5D6EA3175EF788008B24CC /* ProfileController.h */,
+				3C5D6EA4175EF789008B24CC /* ProfileController.m */,
 			);
 			path = SendGrid;
 			sourceTree = "<group>";
@@ -1182,6 +1190,8 @@
 			children = (
 				9DF4260D175E9DB5007965D1 /* LoginModel.h */,
 				9DF4260E175E9DB5007965D1 /* LoginModel.m */,
+				3C5D6EA6175EFD9C008B24CC /* Helper.h */,
+				3C5D6EA7175EFD9C008B24CC /* Helper.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1635,6 +1645,8 @@
 				9DF4235B175E90FE007965D1 /* SideViewController.m in Sources */,
 				9DF4260F175E9DB5007965D1 /* LoginModel.m in Sources */,
 				9DF42612175EB3C1007965D1 /* LeftMenuViewController.m in Sources */,
+				3C5D6EA5175EF789008B24CC /* ProfileController.m in Sources */,
+				3C5D6EA8175EFD9C008B24CC /* Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

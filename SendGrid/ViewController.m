@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LoginModel.h"
 #import "LoginViewController.h"
+#import "Helper.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,11 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [[Helper sharedInstance] addToolbar:self.view controller:self.sidePanelController];
+    });
+
     LoginModel* lm = [LoginModel sharedInstance];
     if (!lm.isAuthenticated) {
         LoginViewController* lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"loginViewController"];
