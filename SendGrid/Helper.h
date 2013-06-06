@@ -16,4 +16,6 @@
 - (void) addToolbar:(UIView*)view controller:(JASidePanelController*)controller;
 - (void) onToolbarButton1Click:(id)sender;
 
++ (UIActivityIndicatorView*) createActivityIndicatorForView:(UIView*)view;
+
 @end

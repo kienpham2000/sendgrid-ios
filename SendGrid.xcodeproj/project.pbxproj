@@ -367,6 +367,8 @@
 		9DF4260B175E9A7F007965D1 /* zoom-out.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF424B4175E9A7F007965D1 /* zoom-out.png */; };
 		9DF4260F175E9DB5007965D1 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4260E175E9DB5007965D1 /* LoginModel.m */; };
 		9DF42612175EB3C1007965D1 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF42611175EB3C1007965D1 /* LeftMenuViewController.m */; };
+		9DF42615175FBEFA007965D1 /* SGProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF42614175FBEFA007965D1 /* SGProfileModel.m */; };
+		9DF42618175FBF83007965D1 /* SGApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF42617175FBF83007965D1 /* SGApiModel.m */; };
 		E5EAF73BF5684AB7B16AAEE6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089C61E431F47A8964CB253 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -744,6 +746,10 @@
 		9DF4260E175E9DB5007965D1 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		9DF42610175EB3C0007965D1 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		9DF42611175EB3C1007965D1 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		9DF42613175FBEFA007965D1 /* SGProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGProfileModel.h; sourceTree = "<group>"; };
+		9DF42614175FBEFA007965D1 /* SGProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGProfileModel.m; sourceTree = "<group>"; };
+		9DF42616175FBF83007965D1 /* SGApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGApiModel.h; sourceTree = "<group>"; };
+		9DF42617175FBF83007965D1 /* SGApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGApiModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1192,6 +1198,10 @@
 				9DF4260E175E9DB5007965D1 /* LoginModel.m */,
 				3C5D6EA6175EFD9C008B24CC /* Helper.h */,
 				3C5D6EA7175EFD9C008B24CC /* Helper.m */,
+				9DF42613175FBEFA007965D1 /* SGProfileModel.h */,
+				9DF42614175FBEFA007965D1 /* SGProfileModel.m */,
+				9DF42616175FBF83007965D1 /* SGApiModel.h */,
+				9DF42617175FBF83007965D1 /* SGApiModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1647,6 +1657,8 @@
 				9DF42612175EB3C1007965D1 /* LeftMenuViewController.m in Sources */,
 				3C5D6EA5175EF789008B24CC /* ProfileController.m in Sources */,
 				3C5D6EA8175EFD9C008B24CC /* Helper.m in Sources */,
+				9DF42615175FBEFA007965D1 /* SGProfileModel.m in Sources */,
+				9DF42618175FBF83007965D1 /* SGApiModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

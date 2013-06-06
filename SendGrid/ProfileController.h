@@ -11,5 +11,10 @@
 #import "UIViewController+JASidePanel.h"
 
 @interface ProfileController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITableViewCell *addressCell;
+
 
 @end

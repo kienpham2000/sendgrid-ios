@@ -27,6 +27,7 @@
 
 - (void) addToolbar:(UIView*)view controller:(JASidePanelController*)controller;
 {
+    [[view viewWithTag:999] removeFromSuperview];
     savedController = controller;
     CGRect frame = CGRectMake(0, 0, view.frame.size.width, 44);
     UIToolbar* toolBar = [[UIToolbar alloc] initWithFrame:frame];
@@ -41,6 +42,16 @@
 - (void) onToolbarButton1Click:(id)sender
 {
     [savedController showLeftPanelAnimated:true];
+}
+
++ (UIActivityIndicatorView*) createActivityIndicatorForView:(UIView*)view
+{
+    UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    indicator.center = view.center;
+    indicator.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    [indicator startAnimating];
+    [view addSubview:indicator];
+    return indicator;
 }
 
 @end

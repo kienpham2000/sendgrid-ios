@@ -14,7 +14,7 @@
 
 @implementation LeftMenuViewController
 {
-    NSMutableArray* controllers;
+    NSMutableDictionary* controllers;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 
-    controllers = [[NSMutableArray alloc] init];
+    controllers = [[NSMutableDictionary alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -114,20 +114,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *controllerArray = [NSArray arrayWithObjects: @"centerController", @"profileController", @"statsController", @"appsController", @"developersController", @"activitiesController", @"reportsController", @"billingController", @"supportController", @"loginViewController", nil];
+    NSString *controllerName = controllerArray[indexPath.row];
     if ([controllers count] == 0) {
         UIViewController* oldCenterController = [self.sidePanelController centerPanel];
-        [controllers addObject:oldCenterController];
+        controllers[@"centerController"] = oldCenterController;
     }
     UIViewController* newCenterController;
-    if (indexPath.row < [controllers count]) {
-        newCenterController = [controllers objectAtIndex:indexPath.row];
+    if ([controllers objectForKey:controllerName]) {
+        newCenterController = [controllers objectForKey:controllerName];
     } else {
         newCenterController = [self.storyboard instantiateViewControllerWithIdentifier:controllerArray[indexPath.row]];
-        [controllers addObject:newCenterController];
+        controllers[controllerName] = newCenterController;
     }
 //    NSLog(@"view: %@", [oldCenterController.view viewWithTag:999]);
     UIViewController* oldCenterController = [self.sidePanelController centerPanel];
-    [[oldCenterController.view viewWithTag:999] removeFromSuperview];
+//    [[oldCenterController.view viewWithTag:999] removeFromSuperview];
     UIWindow* keyWindow = [UIApplication sharedApplication].keyWindow;
     UIView* baseView = [keyWindow.subviews objectAtIndex:0];
     [baseView addSubview:[oldCenterController.view viewWithTag:999]];
