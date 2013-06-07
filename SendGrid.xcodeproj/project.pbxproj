@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3C5D6EA5175EF789008B24CC /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D6EA4175EF789008B24CC /* ProfileController.m */; };
 		3C5D6EA8175EFD9C008B24CC /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D6EA7175EFD9C008B24CC /* Helper.m */; };
+		9D122D23176134D000091C31 /* SGStatsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D122D22176134D000091C31 /* SGStatsModel.m */; };
+		9D122D261761414400091C31 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D122D251761414400091C31 /* StatsViewController.m */; };
 		9DB1555A175E86790078D890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB15559175E86790078D890 /* UIKit.framework */; };
 		9DB1555C175E86790078D890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB1555B175E86790078D890 /* Foundation.framework */; };
 		9DB1555E175E86790078D890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB1555D175E86790078D890 /* CoreGraphics.framework */; };
@@ -379,6 +381,10 @@
 		3C5D6EA7175EFD9C008B24CC /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		6E1F4D0F7F724431B4FFC723 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		7089C61E431F47A8964CB253 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D122D21176134D000091C31 /* SGStatsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGStatsModel.h; sourceTree = "<group>"; };
+		9D122D22176134D000091C31 /* SGStatsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGStatsModel.m; sourceTree = "<group>"; };
+		9D122D241761414400091C31 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		9D122D251761414400091C31 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
 		9DB15556175E86790078D890 /* SendGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB15559175E86790078D890 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9DB1555B175E86790078D890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -814,6 +820,8 @@
 				9DF42611175EB3C1007965D1 /* LeftMenuViewController.m */,
 				3C5D6EA3175EF788008B24CC /* ProfileController.h */,
 				3C5D6EA4175EF789008B24CC /* ProfileController.m */,
+				9D122D241761414400091C31 /* StatsViewController.h */,
+				9D122D251761414400091C31 /* StatsViewController.m */,
 			);
 			path = SendGrid;
 			sourceTree = "<group>";
@@ -1202,6 +1210,8 @@
 				9DF42614175FBEFA007965D1 /* SGProfileModel.m */,
 				9DF42616175FBF83007965D1 /* SGApiModel.h */,
 				9DF42617175FBF83007965D1 /* SGApiModel.m */,
+				9D122D21176134D000091C31 /* SGStatsModel.h */,
+				9D122D22176134D000091C31 /* SGStatsModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1659,6 +1669,8 @@
 				3C5D6EA8175EFD9C008B24CC /* Helper.m in Sources */,
 				9DF42615175FBEFA007965D1 /* SGProfileModel.m in Sources */,
 				9DF42618175FBF83007965D1 /* SGApiModel.m in Sources */,
+				9D122D23176134D000091C31 /* SGStatsModel.m in Sources */,
+				9D122D261761414400091C31 /* StatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
